@@ -1,5 +1,6 @@
 import React from "react";
 import ToDoItem from "./TodoItem";
+import './style.css';
 
 
 function App() {
