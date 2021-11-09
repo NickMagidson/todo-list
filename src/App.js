@@ -31,6 +31,7 @@ class App extends Component {
       }
     })
   }
+  
 
   render() {
     const todoItems = this.state.todos.map((item) => 
@@ -43,6 +44,13 @@ class App extends Component {
 
     return (
         <div className="todo-list">
+            <form>
+              <input 
+                type='text'
+                value={this.item}
+                placeholder='Add Item' 
+                onChange={this.handleChange} />
+            </form>
           {todoItems}
         </div>
       )
