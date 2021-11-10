@@ -97,8 +97,8 @@
     color: #fff;
     background: linear-gradient(
       90deg,
-      rgba(255, 118, 20, 1) 0%,
-      rgba(255, 84, 17, 1) 100%
+      rgb(247, 140, 53) 0%,
+      rgb(255, 94, 31) 100%
     );
   
     padding: 16px;
