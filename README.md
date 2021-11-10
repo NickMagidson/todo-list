@@ -4,11 +4,11 @@
 
 This is a to-do list app built in React.js
 
-cd todo-list
-<br />
-npm start
-
 <strong>Features:</strong>
 
 - Allows user to add items to a list.
 - Can check off, edit, and delete items.
+
+
+<h3>cd todo-list</h3>
+<h3>npm start</h3>
