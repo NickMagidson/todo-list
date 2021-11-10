@@ -10,6 +10,6 @@ This is a to-do list app built using React.js
 - Can check off, edit, and delete items.
 
 
-<strong>cd todo-list</strong>
-<br />
-<strong>npm start</strong>
+### `cd todo-list`
+
+### `npm start`
