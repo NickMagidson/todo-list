@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
+// App's form for user input
 function TodoForm(props) {
   const [input, setInput] = useState(props.edit ? props.edit.value : '');
 
@@ -14,8 +15,9 @@ function TodoForm(props) {
   };
 
   const handleSubmit = e => {
-    e.preventDefault();
+    e.preventDefault(); // Stop refreshing
 
+    // Generates colors for task items
     props.onSubmit({
       id: Math.floor(Math.random() * 10000),
       text: input
@@ -27,7 +29,7 @@ function TodoForm(props) {
         <form onSubmit={handleSubmit} className='todo-form'>
           {props.edit ? (
             <>
-              <input
+              <input // Edit button
                 placeholder='Update your item'
                 value={input}
                 onChange={handleChange}
@@ -41,7 +43,7 @@ function TodoForm(props) {
             </>
           ) : (
             <>
-              <input
+              <input // Add task 
                 placeholder='Add task'
                 value={input}
                 onChange={handleChange}
@@ -50,7 +52,7 @@ function TodoForm(props) {
                 ref={inputRef}
               />
               <button onClick={handleSubmit} className='todo-button'>
-                Add todo
+                Add task
               </button>
             </>
           )}
