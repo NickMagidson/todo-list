@@ -3,7 +3,7 @@ import TodoForm from './TodoForm';
 import {RiCloseCircleLine} from 'react-icons/ri';
 import {TiEdit} from 'react-icons/ti';
 
- function Todo({ todos, completeTodo, removeTodo }) {
+ function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
     const [edit, setEdit] = useState({
         id: null,
         value:''
@@ -18,7 +18,7 @@ import {TiEdit} from 'react-icons/ti';
     };
 
     if (edit.id) {
-        return <TodoForm edit={edit} submitUpdate={submitUpdate} />;
+        return <TodoForm edit={edit} onSubmit={submitUpdate} />;
     } 
 
     return todos.map((todo, index) => (
