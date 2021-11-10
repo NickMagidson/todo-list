@@ -5,6 +5,7 @@
 This is a to-do list app built in React.js
 
 cd todo-list
+<br />
 npm start
 
 <strong>Features:</strong>
